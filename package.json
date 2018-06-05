@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && cp -rf dist/ docs",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "@types/codemirror": "0.0.57",
+    "codemirror": "^5.38.0",
+    "lier": "^2.1.11",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
     "vue-class-component": "^6.0.0",
